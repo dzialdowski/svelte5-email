@@ -1,28 +1,26 @@
-![svelte-email-banner](https://user-images.githubusercontent.com/59960385/216772883-6cc40ff9-ef6e-4269-bed3-17c1023bbaf6.png)
-
-<div align="center"><strong>Svelte Email</strong></div>
-<div align="center">Designing emails has never been easier.</div>
-<br />
+<div align="center"><strong style="font-size: 24px;">Svelt<span style="color: red;">y</span>-Email</strong></div>
+<div align="center">Community fork for <a href="https://github.com/carstenlebek/svelte-email">Svelte-Email</a>. Designing emails has never been easier.</div>
+<hr>
 <div align="center">
-<a href="https://svelte-email.vercel.app/">Documentation</a> 
+<a href="https://svelte-email.vercel.app/">Documentation (Previous Author Site)</a> 
 <span> · </span>
-<a href="https://github.com/carstenlebek/svelte-email">GitHub</a> 
+<a href="https://github.com/cmjoseph07/svelty-email">GitHub</a> 
 </div>
 
 # Introduction
 
-After seeing [react-email](https://github.com/resendlabs/react-email) I have decided to create a similar library for Svelte. `svelte-email` enables you to write and design email templates with svelte and render them to HTML or plain text.
+After seeing [react-email](https://github.com/resendlabs/react-email) Carsten decided to create a similar library for Svelte. `svelte-email` enables you to write and design email templates with svelte and render them to HTML or plain text. This is a community maintained fork to keep the project going as svelte continues to evolve under `svelty-email`.
 
 # Installation
 
 Install the package to your existing SvelteKit project:
 
 ```bash title="npm"
-npm install svelte-email
+npm install svelty-email
 ```
 
 ```bash title="pnpm"
-pnpm install svelte-email
+pnpm install svelty-email
 ```
 
 # Getting started
@@ -33,7 +31,7 @@ pnpm install svelte-email
 
 ```html
 <script>
-	import { Button, Hr, Html, Text } from 'svelte-email';
+	import { Button, Hr, Html, Text } from 'svelty-email';
 
 	export let name = 'World';
 </script>
@@ -54,7 +52,7 @@ This example uses [Nodemailer](https://nodemailer.com/about/) to send the email.
 `src/routes/emails/hello/+server.js`
 
 ```js
-import { render } from 'svelte-email';
+import { render } from 'svelty-email';
 import Hello from '$lib/emails/Hello.svelte';
 import nodemailer from 'nodemailer';
 
@@ -87,7 +85,9 @@ transporter.sendMail(options);
 
 # Documentation
 
-For more information, please visit the [documentation](https://svelte-email.vercel.app/).
+- WARNING: Documentation page is from previous project, `svelte-email` will need to be replaced with `svelty-email` but examples are great. 
+
+For more information, please visit the [documentation](https://svelte-email.vercel.app/). 
 
 # Components
 
@@ -117,6 +117,10 @@ Emails built with React Email can be converted into HTML and sent using any emai
 - [AWS SES](https://github.com/resendlabs/react-email/tree/main/examples/aws-ses)
 
 ## Author
+
+- Chris Joseph
+
+### Previous Author [svelte-email](https://github.com/carstenlebek/svelte-email)
 
 - Carsten Lebek ([@carstenlebek](https://twitter.com/carstenlebek1))
 

@@ -8,6 +8,7 @@
 	import type { HTMLAttributes } from 'svelte/elements';
 	interface $$Props extends Omit<HTMLAttributes<HTMLTableCellElement>, 'style'> {
 		style?: StandardLonghandProperties & StandardProperties & StandardShorthandProperties;
+		class?: string | undefined;
 	}
 
 	export let style: $$Props['style'] = {};
