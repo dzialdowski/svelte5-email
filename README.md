@@ -1,4 +1,4 @@
-<div align="center"><strong style="font-size: 24px;">Svelt<span style="color: red;">y</span>-Email</strong></div>
+<h1 align="center"><strong>Svelt𝑦-Email</strong></h1>
 <div align="center">Community fork for <a href="https://github.com/carstenlebek/svelte-email">Svelte-Email</a>. Designing emails has never been easier.</div>
 <hr>
 <div align="center">

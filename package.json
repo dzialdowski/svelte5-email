@@ -1,6 +1,6 @@
 {
 	"name": "svelty-email",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"description": "Build emails with Svelte",
 	"author": {
 		"name": "Chris Joseph"
