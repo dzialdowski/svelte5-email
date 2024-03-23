@@ -32,14 +32,12 @@
 	const fontFamily =
 		'-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif';
 
-	const main = {
-		backgroundColor: '#ffffff'
-	};
-
 	const container = {
 		margin: '0 auto',
 		padding: '20px 0 48px',
-		width: '580px'
+		width: '580px',
+        backgroundColor: '#ffffff'
+
 	};
 
 	const userImage = {
@@ -111,7 +109,6 @@
 <Html>
 	<Head />
 	<Preview preview={previewText} />
-	<Section style={main}>
 		<Container style={container}>
 			<Img src={`${baseUrl}/airbnb-logo.png`} width="96" height="30" alt="Airbnb" />
 			<Section>
@@ -149,7 +146,6 @@
 			<Text style={footer}>Airbnb, Inc., 888 Brannan St, San Francisco, CA 94103</Text>
 			<Link href="https://airbnb.com" style={reportLink}>Report unsafe behavior</Link>
 		</Container>
-	</Section>
 </Html>
 ```
 
