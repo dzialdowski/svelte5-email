@@ -1,6 +1,6 @@
 {
 	"name": "svelty-email",
-	"version": "0.0.8",
+	"version": "0.0.9",
 	"description": "Build emails with Svelte",
 	"author": {
 		"name": "Chris Joseph"
@@ -16,7 +16,9 @@
 		"url": "https://github.com/cmjoseph07/svelty-email/issues"
 	},
 	"keywords": [
-		"svelte", "sveltekit", "email"
+		"svelte",
+		"sveltekit",
+		"email"
 	],
 	"scripts": {
 		"dev": "vite dev",

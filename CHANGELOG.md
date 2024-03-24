@@ -1,5 +1,11 @@
 # @cmjoseph07/svelty-email
 
+## 0.0.9
+
+- fix: better error message for 'Preview' component range error. ([#14](https://github.com/carstenlebek/svelte-email/issues/14))
+- fix: remove default bg of #ffffff from 'Container' component and TS error for class. ([#32](https://github.com/carstenlebek/svelte-email/issues/32))
+- fix: warning -- CardGroup has unused export property 'cols'.
+
 ## 0.0.8
 
 ### Patch Changes

@@ -6,8 +6,10 @@
 	} from 'csstype';
 	import { styleToString } from '$lib/utils';
 	import type { HTMLAttributes } from 'svelte/elements';
-	interface $$Props extends Omit<HTMLAttributes<HTMLDivElement>, 'style'> {
+
+	interface $$Props extends Omit<HTMLAttributes<HTMLDivElement>, 'style' | 'class'> {
 		style?: StandardLonghandProperties & StandardProperties & StandardShorthandProperties;
+		class?: string | undefined;
 	}
 
 	export let style: $$Props['style'] = {};
@@ -20,7 +22,21 @@
 
 <div>
 	{@html `<!--[if mso | IE]>
-          <table role="presentation" width="100%" align="center" style="${inlineStyle}" class="${className}"><tr><td></td><td style="width:37.5em;background:#ffffff">
+        <table role="presentation" width="100%" align="center" style="${inlineStyle}" class="${className}"><tr><td></td><td style="width:37.5em;">
+      <![endif]-->`}
+</div>
+<div {...$$restProps} style={inlineStyle} class={className}>
+	<slot />
+</div>
+<div>
+	{@html `<!--[if mso | IE]>
+        </td><td></td></tr></table>
+        <![endif]-->`}
+</div>
+
+<div>
+	{@html `<!--[if mso | IE]>
+          <table role="presentation" width="100%" align="center" style="${inlineStyle}" class="${className}"><tr><td></td><td style="width:37.5em;">
         <![endif]-->`}
 </div>
 <div {...$$restProps} style={inlineStyle} class={className}>

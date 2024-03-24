@@ -1,7 +1,5 @@
 <script lang="ts">
-	import clsx from 'clsx';
-
-	export let cols: 1 | 2 | 3 | 4 = 2;
+	export const cols: 1 | 2 | 3 | 4 = 2;
 </script>
 
 <div class={'card-group'}>
