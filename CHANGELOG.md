@@ -1,5 +1,9 @@
 # @cmjoseph07/svelty-email
 
+## 0.0.10
+
+- fix: duplicate markdown produced from `Container.svelte` yank, removed duplicate code.
+
 ## 0.0.9
 
 - fix: better error message for 'Preview' component range error. ([#14](https://github.com/carstenlebek/svelte-email/issues/14))
