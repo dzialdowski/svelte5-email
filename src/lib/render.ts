@@ -1,6 +1,6 @@
 import { convert } from 'html-to-text';
 import pretty from 'pretty';
-import { Component, ComponentType, SvelteComponent } from 'svelte';
+import { Component, SvelteComponent } from 'svelte';
 import { render as svelteRender } from 'svelte/server';
 
 export const render = ({
