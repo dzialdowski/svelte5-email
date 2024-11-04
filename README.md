@@ -1,5 +1,5 @@
-<h1 align="center"><strong>Svelt𝑦-Email</strong></h1>
-<div align="center">Community fork for <a href="https://github.com/carstenlebek/svelte-email">Svelte-Email</a>. Designing emails has never been easier.</div>
+<h1 align="center"><strong>Svelte5-Email</strong></h1>
+<div align="center">Fork for <a href="https://github.com/carstenlebek/svelte-email">Svelte-Email</a> and <a href="https://github.com/cmjoseph07/svelty-email">cmjoseph07/svelty-email</a>. Designing emails has never been easier.</div>
 <hr>
 <div align="center">
 <a href="https://svelte-email.vercel.app/">Documentation (Previous Author Site)</a> 
@@ -37,13 +37,11 @@ pnpm install svelty-email
 	export let name = 'World';
 </script>
 
-<Html lang="en">
-	<Text>
-		Hello, {name}!
-	</Text>
-	<Hr />
-	<Button href="https://svelte.dev">Visit Svelte</Button>
-</Html>
+<html lang="en">
+	<Text> Hello, {name}! </Text>
+	<hr />
+	<button href="https://svelte.dev">Visit Svelte</button>
+</html>
 ```
 
 ## 2. Send email
@@ -89,12 +87,12 @@ transporter.sendMail(options);
 > [!CAUTION]
 > Update: fix broken Airbnb example formatting in old docs, broken logos
 
-[Airbnb Example](https://www.sveltelab.dev/dk5ce45zckb7h9v?files=.%2Fsrc%2Froutes%2F%2Bpage.svelte%2C.%2Fsrc%2Froutes%2F%2Bpage.server.js%2C.%2Fsrc%2Flib%2Femails%2FAirbnbExp.svelte) 
+[Airbnb Example](https://www.sveltelab.dev/dk5ce45zckb7h9v?files=.%2Fsrc%2Froutes%2F%2Bpage.svelte%2C.%2Fsrc%2Froutes%2F%2Bpage.server.js%2C.%2Fsrc%2Flib%2Femails%2FAirbnbExp.svelte)
 
 # Documentation
 
 > [!WARNING]
-> Documentation page is from previous project, `svelte-email` will need to be replaced with `svelty-email` but examples are great. 
+> Documentation page is from previous project, `svelte-email` will need to be replaced with `svelty-email` but examples are great.
 
 For more information, please visit the [documentation](https://svelte-email.vercel.app/).
 
@@ -114,7 +112,7 @@ A set of standard components to help you build amazing emails without having to 
 - [Preview](https://svelte-email.vercel.app/docs/components/preview)
 - [Body](https://svelte-email.vercel.app/docs/components/body)
 - [Column](https://svelte-email.vercel.app/docs/components/column)
-- [Section](https://svelte-email.vercel.app/docs/components/section) -- *Please do not use as 'root' element, can break styling*
+- [Section](https://svelte-email.vercel.app/docs/components/section) -- _Please do not use as 'root' element, can break styling_
 
 # Integrations
 
@@ -126,8 +124,6 @@ Emails built with React Email can be converted into HTML and sent using any emai
 - [AWS SES](https://github.com/resendlabs/react-email/tree/main/examples/aws-ses)
 
 # Advanced Examples:
-
-
 
 ## Author
 
