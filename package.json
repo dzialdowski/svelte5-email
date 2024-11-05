@@ -1,6 +1,6 @@
 {
 	"name": "svelte5-email",
-	"version": "0.0.20",
+	"version": "0.0.21",
 	"description": "Build emails with Svelte",
 	"author": {
 		"name": "Rafał Działdowski"
